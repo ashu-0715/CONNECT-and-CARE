@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('notesimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    padding: 50px 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+.container h1 {
+    font-size: 2.5rem;
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #2e8b57;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #256d46;
+}
+#contributed-notes {
+    margin-top: 30px;
+}
+
+.note-item {
+    background: #f0f0f0;
+    padding: 20px;
+    border-left: 5px solid #2e8b57;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.note-item h3 {
+    margin-bottom: 10px;
+    color: #2e8b57;
+}
+
+.note-item p {
+    margin: 5px 0;
+}
+
+.note-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.note-item a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container h2 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}

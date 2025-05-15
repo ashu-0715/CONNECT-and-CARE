@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar nav ul li a:hover {
+    color: #f0a500;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('homepagedesign.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 20px;
+    padding-right: 25px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    background-color: #f0a500;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navbar .logo h1 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .navbar nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .navbar nav ul li {
+        display: inline-block;
+    }
+
+    .navbar nav ul li a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+        padding-right: 0;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}

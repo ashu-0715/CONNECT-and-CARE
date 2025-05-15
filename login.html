@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Connect & Care</title>
+  <link rel="icon" type="image/jpeg" href="CANDC-LOGO.jpg" width="500">
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome Back!</h1>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group password-group">
+  <label for="password">Password</label>
+  <div class="password-wrapper">
+    <input type="password" id="password" name="password" placeholder="Enter your password" required />
+    <span id="togglePassword" class="toggle-eye"></span>
+  </div>
+</div>
+
+      <button type="submit">Login</button>
+    </form>
+    <p class="signup-link">Don't have an account? <a href="#">Sign up here</a></p>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault(); 
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
+
